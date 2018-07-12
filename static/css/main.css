@@ -1,0 +1,28 @@
+.navbar, .navbar-inverse {
+  border-radius: 0px;
+}
+
+.badge-in {
+  background-color: green;
+}
+
+.badge-out {
+  background-color: red;
+}
+
+.good_food {
+  color: green;
+}
+
+.bad_food {
+  color: red;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+form {
+  margin: 50px 0px;
+}
