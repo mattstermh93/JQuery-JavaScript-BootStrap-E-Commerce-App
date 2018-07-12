@@ -26,3 +26,24 @@
 form {
   margin: 50px 0px;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.center {
+  display: block;
+  margin: 20px auto;
+}
+
+.extra-margin {
+  margin: 30px 0px;
+}
+
+.pic_text {
+  padding-top: 35px;
+}
+
+figcaption {
+  text-align: center;
+}
