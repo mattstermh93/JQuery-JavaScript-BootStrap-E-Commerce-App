@@ -93,3 +93,11 @@ function listCart() { // return current cart
   }
   return cartCopy;
 }
+
+function saveCart() { // saves the current cart to the browser
+  localStorage.setItem
+}
+
+function loadCart() {
+
+}
