@@ -15,13 +15,16 @@ setTimeout(function(){
 }, 1);
 
 //Shopping cart functionality below
-
+//
+//defining global variables for use in cart functions
 var cart = []
-var Item = function (name, price, quantity) {
+var Item = function (name, price, count) {
 	this.name = name
 	this.price = price
-	this.quantity = quantity
+	this.count = count
 	};
+
+//function creation
 
 
 function addItemtoCart(name, price, count) {
@@ -38,7 +41,20 @@ function addItemtoCart(name, price, count) {
 function removeItemFromCart(name) {
   for (var i in cart) {
     if (cart[i].name === name) {
+      cart[i].count --;
+      if (cart[i].count === 0) {
+          cart.splice(i, 1);
+        }
+        break;
+    }
+  }
+}
 
+function removeItemFromCartAll(name) {
+  for (var i in cart) {
+    if (cart[i].name === name) {
+      cart.splice(i, 1);
+      break;
     }
   }
 }
