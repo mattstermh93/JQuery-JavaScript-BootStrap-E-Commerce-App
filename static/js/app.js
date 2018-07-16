@@ -62,3 +62,20 @@ function removeItemFromCartAll(name) {
 function clearCart() {
   cart = [];
 }
+
+function countCart() {
+  var totalCount = 0;
+  for (var i in count) {
+    totalcount+= cart[i].count;
+
+  }
+  return totalCount;
+}
+
+function totalCart() {
+  var totalCost = 0;
+  for (var i in cart) {
+    totalCost += cart[i].price;
+  }
+  return totalCost;
+}
