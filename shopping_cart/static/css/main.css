@@ -1,0 +1,52 @@
+.prod_name {
+  text-align: center;
+}
+
+.amount {
+  text-align: center;
+  font-size: 13px;
+  margin: 5px;
+}
+
+.btn, .btn-primary {
+  display: block;
+  margin: 10px auto;
+}
+
+img {
+  width: 100%;
+  margin-top: 40px;
+}
+
+table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.table_head, .cart_total {
+  background-color: lightblue;
+  text-align: center;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+table tr th, table tr td {
+  padding: 5px;
+  font-weight: bold;
+}
+
+th {
+  text-align: center;
+}
+
+.badge {
+  cursor: pointer;
+}
+
+.product {
+  margin: 20px;
+}
+
+tr.cart_total th {
+  text-align: center;
+}
