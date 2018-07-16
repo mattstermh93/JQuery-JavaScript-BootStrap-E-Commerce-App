@@ -16,6 +16,7 @@ setTimeout(function(){
 
 //Shopping cart functionality below
 //
+
 //defining global variables for use in cart functions
 var cart = []
 var Item = function (name, price, count) {
@@ -27,7 +28,7 @@ var Item = function (name, price, count) {
 //function creation
 
 
-function addItemtoCart(name, price, count) {
+function addItemtoCart(name, price, count) { // add an item to the cart
 	for (var i in cart) {
 		if (cart[i].name === name) {
       cart[i].count += count;
@@ -38,7 +39,7 @@ function addItemtoCart(name, price, count) {
 	cart.push(item);
 }
 
-function removeItemFromCart(name) {
+function removeItemFromCart(name) { // remove an item from the cart
   for (var i in cart) {
     if (cart[i].name === name) {
       cart[i].count --;
@@ -50,7 +51,7 @@ function removeItemFromCart(name) {
   }
 }
 
-function removeItemFromCartAll(name) {
+function removeItemFromCartAll(name) { // removes an entire item each time it's name is invoked
   for (var i in cart) {
     if (cart[i].name === name) {
       cart.splice(i, 1);
@@ -59,11 +60,11 @@ function removeItemFromCartAll(name) {
   }
 }
 
-function clearCart() {
+function clearCart() { // empties the cart
   cart = [];
 }
 
-function countCart() {
+function countCart() { // return total number of items in cart
   var totalCount = 0;
   for (var i in count) {
     totalcount+= cart[i].count;
@@ -72,10 +73,14 @@ function countCart() {
   return totalCount;
 }
 
-function totalCart() {
+function totalCart() { // return total cost
   var totalCost = 0;
   for (var i in cart) {
     totalCost += cart[i].price;
   }
   return totalCost;
+}
+
+function listCart() { // return current cart
+  
 }
