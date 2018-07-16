@@ -58,3 +58,7 @@ function removeItemFromCartAll(name) {
     }
   }
 }
+
+function clearCart() {
+  cart = [];
+}
