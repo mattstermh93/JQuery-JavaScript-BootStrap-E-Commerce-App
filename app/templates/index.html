@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Products - Shopping App
+{% endblock %}
+
+{% block content %}
+
+{% block app_content %}
+<!-- this is the main section -->
+  <div class="container">
+    <div class="row">
+      <!-- column for showing products -->
+      <div class="col-md-9" id="prod_section">
+
+      </div> <!-- ends col md 9 -->
+
+    <!-- column for showing shopping cart -->
+      <div class="col-md-3" id="cart_section">
+        <table id="cart">
+
+        </table>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+{% endblock %}
